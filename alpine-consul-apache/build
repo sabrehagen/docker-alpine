@@ -1,1 +1,0 @@
-docker build -t smebberson/alpine-consul-apache /vagrant/alpine-consul-apache
