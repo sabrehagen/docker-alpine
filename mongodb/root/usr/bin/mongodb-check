@@ -1,0 +1,10 @@
+#!/usr/bin/with-contenv sh
+
+RESULT=`mongo --eval '{ ping : "hello world" }' | tail -n 1`
+
+if [ "$RESULT" = "hello world" ]; then
+    exit 0
+fi
+
+exit 2
+
