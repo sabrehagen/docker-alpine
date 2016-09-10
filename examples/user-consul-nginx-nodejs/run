@@ -1,1 +1,0 @@
-docker run --rm --name user-consul-nginx-nodejs --link user-consul:consul-agent -p 80:80 smebberson/user-consul-nginx-nodejs
