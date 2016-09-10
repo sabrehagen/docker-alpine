@@ -1,3 +1,0 @@
-
-# Run the user-consul-nodejs example.
-dc up -d && dc scale consul=3

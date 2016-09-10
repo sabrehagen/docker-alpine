@@ -1,3 +1,0 @@
-
-# run the user-confd image
-docker run --rm --name user-confd smebberson/user-confd
