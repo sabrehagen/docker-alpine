@@ -1,1 +1,0 @@
-docker build -t sabrehagen/alpine-consul-mongodb .
