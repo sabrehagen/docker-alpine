@@ -8,7 +8,4 @@ EXPOSE 27017
 
 RUN mkdir -p /var/log/mongodb /var/lib/mongodb
 
-# assign ownership of data directories to mongodb user
-RUN chown -R mongodb:mongodb /var/lib/mongodb /var/log/mongodb
-
 ADD root /
