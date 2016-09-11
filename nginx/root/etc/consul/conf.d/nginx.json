@@ -10,8 +10,8 @@
             "timeout": "1s"
         }, {
             "id": "websocket-server",
-            "name": "nginx on port 8080",
-            "http": "http://localhost:8080/ping",
+            "name": "nginx on port 8000",
+            "http": "http://localhost:8000/ping",
             "interval": "10s",
             "timeout": "1s"
         }]
