@@ -4,15 +4,11 @@ RUN echo "@testing http://dl-4.alpinelinux.org/alpine/edge/testing" >> /etc/apk/
     apk upgrade --update && \
     apk add mongodb@testing
 
-ADD root /
+EXPOSE 27017
 
-# create log directory
-RUN mkdir -p /var/log/mongodb
-
-# mount host database
-VOLUME /var/lib/mongodb:/var/lib/mongodb
+RUN mkdir -p /var/log/mongodb /var/lib/mongodb
 
 # assign ownership of data directories to mongodb user
 RUN chown -R mongodb:mongodb /var/lib/mongodb /var/log/mongodb
 
-EXPOSE 27017
+ADD root /
