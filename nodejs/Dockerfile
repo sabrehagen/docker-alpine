@@ -1,4 +1,4 @@
-FROM smebberson/alpine-consul-base:4.0.0
+FROM sabrehagen/alpine-consul-base
 
 ENV NODE_VERSION=v6.5.0 NPM_VERSION=3
 

@@ -1,4 +1,4 @@
-FROM smebberson/alpine-consul-base:4.0.0
+FROM sabrehagen/alpine-consul-base
 
 # Install nginx
 RUN echo "http://dl-4.alpinelinux.org/alpine/v3.3/main" >> /etc/apk/repositories && \

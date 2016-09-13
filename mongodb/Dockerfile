@@ -1,4 +1,4 @@
-FROM smebberson/alpine-consul-base:4.0.0
+FROM sabrehagen/alpine-consul-base
 
 RUN echo "@testing http://dl-4.alpinelinux.org/alpine/edge/testing" >> /etc/apk/repositories && \
     apk upgrade --update && \

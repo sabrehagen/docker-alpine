@@ -1,5 +1,4 @@
-FROM smebberson/alpine-consul-base:4.0.0
-MAINTAINER Scott Mebberson <scott@scottmebberson.com>
+FROM sabrehagen/alpine-consul-base
 
 # Install redis.
 RUN echo "http://dl-4.alpinelinux.org/alpine/edge/main" >> /etc/apk/repositories && \
@@ -12,8 +11,8 @@ RUN echo "http://dl-4.alpinelinux.org/alpine/edge/main" >> /etc/apk/repositories
 # Add the files.
 ADD root /
 
-# A volume for the redis files.
-VOLUME ["/data/redis"]
-
 # Expose the ports for redis.
 EXPOSE 6379
+
+# A volume for the redis files.
+VOLUME ["/data/redis"]
