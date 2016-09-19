@@ -3,4 +3,4 @@
 # externally mounted volumes are owned by root, but we want to access the database as the mongodb user
 chown -R mongodb:mongodb /var/lib/mongodb /var/log/mongodb
 
-exec s6-setuidgid mongodb mongod --config /etc/mongod.conf;
+mongod --config /etc/mongod.conf
