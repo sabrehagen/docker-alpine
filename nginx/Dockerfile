@@ -11,7 +11,7 @@ RUN echo "http://dl-4.alpinelinux.org/alpine/v3.3/main" >> /etc/apk/repositories
 
 EXPOSE 80 443
 
-ADD root /
+ADD root/etc /etc
 
 # Setup permissions to allow consul-template to manage nginx
 RUN mkdir /etc/services.d/nginx/supervise/ && \
