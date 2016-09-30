@@ -15,4 +15,4 @@ RUN apk add --update git curl make gcc g++ python linux-headers libgcc libstdc++
     /usr/share/man /tmp/* /var/cache/apk/* /root/.npm /root/.node-gyp \
     /usr/lib/node_modules/npm/man /usr/lib/node_modules/npm/doc /usr/lib/node_modules/npm/html
 
-RUN npm install -g nodemon jasmine
+RUN npm install -g nodemon jasmine jasmine-node

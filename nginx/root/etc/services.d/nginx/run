@@ -1,6 +1,3 @@
 #!/usr/bin/with-contenv sh
 
-# dns resolution fails if nginx is started too early
-sleep 30;
-
 exec nginx;
