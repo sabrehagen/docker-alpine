@@ -11,7 +11,8 @@
 
     server {
         listen 80;
-        listen 443 ssl http2;
+        listen 443 ssl;
+        # listen 443 ssl http2; # container needs to be compiled with http2
         server_name "";
 
         expires -1;
