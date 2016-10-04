@@ -9,9 +9,21 @@
             "interval": "10s",
             "timeout": "1s"
         }, {
+            "id": "api-bypass",
+            "name": "api on port 80",
+            "http": "http://localhost:80/api/v1/ping",
+            "interval": "10s",
+            "timeout": "1s"
+        }, {
             "id": "websocket-server",
             "name": "nginx on port 8000",
             "http": "http://localhost:8000/ping",
+            "interval": "10s",
+            "timeout": "1s"
+        }, {
+            "id": "websocket-server-bypass",
+            "name": "websocket on port 8000",
+            "http": "http://localhost:8000/api/ping",
             "interval": "10s",
             "timeout": "1s"
         }]
