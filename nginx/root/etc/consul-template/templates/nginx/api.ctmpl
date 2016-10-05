@@ -15,6 +15,9 @@
         # listen 443 ssl http2; # container needs to be compiled with http2
         server_name "";
 
+        # redirect http requests to https
+        # return 301 https://$host$request_uri;
+
         expires -1;
 
         location /ping {
